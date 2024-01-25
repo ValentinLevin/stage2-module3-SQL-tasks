@@ -1,32 +1,32 @@
-insert into student(name, groupnumber, birthday)
-select 'John', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Chris', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Carl', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Oliver', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'James', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Lucas', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Henry', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Jacob', 3, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Logan', 3, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Toby Jones', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Joseph Cooper', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Joel Kaur', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Corey Reid', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Rhys Barrett', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Jacoby Bryan', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Gunner Fernandez', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Hugh Pierce', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Samson Barker', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Melvin Mccoy', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Blake Campbell', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Patrick Andrews', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Logan Richardson', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Taylor Allen', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Joe Parker', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Legend Cooke', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Braylon Buckley', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Jeffery Browning', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
-select 'Westin Brady', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd');
+ insert into student(name, groupnumber, birthday)
+ select 'John', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Chris', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Carl', 1, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Oliver', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'James', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Lucas', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Henry', 2, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Jacob', 3, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Logan', 3, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Toby Jones', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Joseph Cooper', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Joel Kaur', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Corey Reid', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Rhys Barrett', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Jacoby Bryan', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Gunner Fernandez', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Hugh Pierce', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Samson Barker', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Melvin Mccoy', 4, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Blake Campbell', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Patrick Andrews', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Logan Richardson', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Taylor Allen', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Joe Parker', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Legend Cooke', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Braylon Buckley', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Jeffery Browning', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd') union
+ select 'Westin Brady', 5, parsedatetime('2000-01-01', 'yyyy-MM-dd');
 
 insert into subject(name, grade)
 values('Art', 1), ('Music', 1), ('Geography', 2), ('History', 2),
