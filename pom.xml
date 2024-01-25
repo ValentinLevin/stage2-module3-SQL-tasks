@@ -11,6 +11,7 @@
     <modules>
         <module>lesson1</module>
         <module>lesson2</module>
+        <module>lesson3</module>
         <module>lesson4</module>
         <module>lesson5</module>
         <module>lesson6</module>
@@ -20,7 +21,6 @@
         <module>lesson10</module>
         <module>lesson11</module>
         <module>lesson12</module>
-        <module>lesson3</module>
     </modules>
 
     <name>module2-sql-task</name>

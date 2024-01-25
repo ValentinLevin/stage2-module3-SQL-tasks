@@ -1,3 +1,4 @@
+
 CREATE TABLE student
 (
     id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -39,4 +40,3 @@ CREATE TABLE payment
     foreign key (type_id) references paymenttype(id),
     foreign key (student_id) references student(id)
 );
-
