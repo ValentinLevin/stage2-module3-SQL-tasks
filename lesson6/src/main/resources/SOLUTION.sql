@@ -8,7 +8,7 @@
      inner join subject s on (s.id = m.subject_id)
  where s.name = 'Art';
 
- select s.*
+ select distinct s.*
  from student s
      inner join payment p on (p.student_id = s.id)
      inner join paymenttype pt on (pt.id = p.type_id)

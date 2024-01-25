@@ -18,7 +18,7 @@
 
  select *
  from PAYMENT
- where datediff('month', PAYMENT_DATE, now()) <= 8;
+ where datediff('month', parsedatetime('20001010','yyyyMMdd'), PAYMENT_DATE) <= 8;
 
  select *
  from STUDENT
@@ -27,6 +27,6 @@
  select *
  from STUDENT
  where
-     (name like 'Roxi %' and GROUPNUMBER=5)
+     (name like 'Roxi %' and GROUPNUMBER=4)
  or
      (name like 'Tallie %' and GROUPNUMBER = 9);
