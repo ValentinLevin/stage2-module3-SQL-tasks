@@ -18,7 +18,7 @@
 
  select *
  from PAYMENT
- where datediff('month', parsedatetime('20001010','yyyyMMdd'), PAYMENT_DATE) <= 8;
+ where datediff('month', PAYMENT_DATE, current_date) <= 8;
 
  select *
  from STUDENT

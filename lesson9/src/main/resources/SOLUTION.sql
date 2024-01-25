@@ -13,7 +13,7 @@
          select student_id
          from mark
          group by student_id
-         having min(mark) < 7
+         having min(mark) > 7
      ) m on (m.student_id = s.id);
 
  select s.id, s.name

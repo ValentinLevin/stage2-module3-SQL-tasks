@@ -2,6 +2,9 @@
      alter column birthday set not null;
 
  alter table mark
+     alter column student_id set not null;
+
+ alter table mark
      alter column subject_id set not null;
 
  alter table mark
