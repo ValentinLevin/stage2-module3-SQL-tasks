@@ -1,4 +1,5 @@
- insert into student(name, groupnumber, birthday)
+insert into student(name, groupnumber, birthday) select 'John', 1, '2010-01-01' union select 'Chris', 1, '2010-01-01' union select 'Carl', 1, '2010-01-01' union select 'Oliver', 2, '2010-01-01' union select 'James', 2, '2010-01-01' union select 'Lucas', 2, '2010-01-01' union select 'Henry', 2, '2010-01-01' union select 'Jacob', 3, '2010-01-01' union select 'Logan', 3, '2010-01-01' union select 'Toby Jones', 4, '2010-01-01' union select 'Joseph Cooper', 4, '2010-01-01' union select 'Joel Kaur', 4, '2010-01-01' union select 'Corey Reid', 4, '2010-01-01' union select 'Rhys Barrett', 4, '2010-01-01' union select 'Jacoby Bryan', 4, '2010-01-01' union select 'Gunner Fernandez', 4, '2010-01-01' union select 'Hugh Pierce', 4, '2010-01-01' union select 'Samson Barker', 4, '2010-01-01' union select 'Melvin Mccoy', 4, '2010-01-01' union select 'Blake Campbell', 5, '2010-01-01' union select 'Patrick Andrews', 5, '2010-01-01' union select 'Logan Richardson', 5, '2010-01-01' union select 'Taylor Allen', 5, '2010-01-01' union select 'Joe Parker', 5, '2010-01-01' union select 'Legend Cooke', 5, '2010-01-01' union select 'Braylon Buckley', 5, '2010-01-01' union select 'Jeffery Browning', 5, '2010-01-01' union select 'Westin Brady', 5, '2010-01-01';
+ /*insert into student(name, groupnumber, birthday)
  select 'John', 1, '2010-01-01' union
  select 'Chris', 1, '2010-01-01' union
  select 'Carl', 1, '2010-01-01' union
@@ -26,7 +27,7 @@
  select 'Legend Cooke', 5, '2010-01-01' union
  select 'Braylon Buckley', 5, '2010-01-01' union
  select 'Jeffery Browning', 5, '2010-01-01' union
- select 'Westin Brady', 5, '2010-01-01';
+ select 'Westin Brady', 5, '2010-01-01';*/
 
  insert into subject(name, grade)
  select 'Art', 1 union
