@@ -1,7 +1,7 @@
-select min(birthday)
+select max(birthday)
 from student;
 
-select min(PAYMENT.PAYMENT_DATE)
+select max(PAYMENT.PAYMENT_DATE)
 from payment;
 
 select avg(mark)
