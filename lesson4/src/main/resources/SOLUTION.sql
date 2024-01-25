@@ -1,12 +1,12 @@
-select *
-from student;
+ select *
+ from student;
 
-select *
-from student
-limit 50;
+ select *
+ from student
+ limit 50;
 
-select name
-from student;
+ select name
+ from student;
 
-select distinct amount
-    from payment;
+ select distinct amount
+     from payment;
