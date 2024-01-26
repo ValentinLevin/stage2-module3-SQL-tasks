@@ -65,30 +65,46 @@
      values(3, 'MONTHLY');
 
  insert into payment(type_id, amount, student_id, payment_date)
- select pt.id, cast(random() * 1000 as decimal), s.id, now()
- from (select 'John' as student_name, 'WEEKLY' as payment_type_name
-       union
-       select 'Oliver' as student_name, 'MONTHLY' as payment_type_name
-       union
-       select 'Henry' as student_name, 'WEEKLY' as payment_type_name
-       union
-       select 'James' as student_name, 'DAILY' as payment_type_iname
-       ) as payments
-  inner join student s on (s.name = payments.student_name)
-  inner join paymenttype pt on (pt.name = payments.payment_type_name);
+ select pt.id, 1000, s.id, now()
+ from student s, paymenttype pt
+ where s.name = 'John' and pt.name = 'WEEKLY';
+
+ insert into payment(type_id, amount, student_id, payment_date)
+ select pt.id, 1000, s.id, now()
+ from student s, paymenttype pt
+ where s.name = 'Oliver' and pt.name = 'MONTHLY';
+
+ insert into payment(type_id, amount, student_id, payment_date)
+ select pt.id, 1000, s.id, now()
+ from student s, paymenttype pt
+ where s.name = 'Henry' and pt.name = 'WEEKLY';
+
+ insert into payment(type_id, amount, student_id, payment_date)
+ select pt.id, 1000, s.id, now()
+ from student s, paymenttype pt
+ where s.name = 'James' and pt.name = 'DAILY';
 
  insert into UNIVERSITY.MARK(student_id, subject_id, mark)
- select s.id, subj.id, marks.mark
- from (
-          select 'Chris' as student_name, 'Art' as subject_name, 8 as mark
-          union
-          select 'Oliver' as student_name, 'History' as subject_name, 5 as mark
-          union
-          select 'James' as student_name, 'Geography' as subject_name, 9 as mark
-          union
-          select 'Jacob' as student_name, 'Math' as subject_name, 4 as mark
-          union
-          select 'Logan' as student_name, 'PE' as subject_name, 9 as mark
-      ) as marks
-          inner join student s on (s.name = marks.student_name)
-          inner join subject subj on (subj.name = marks.subject_name);
+ select s.id, subj.id, 8
+ from student s, subject subj
+ where s.name = 'Chris' and subj.name = 'Art';
+
+ insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ select s.id, subj.id, 5
+ from student s, subject subj
+ where s.name = 'Oliver' and subj.name = 'History';
+
+ insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ select s.id, subj.id, 9
+ from student s, subject subj
+ where s.name = 'James' and subj.name = 'Geography';
+
+ insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ select s.id, subj.id, 4
+ from student s, subject subj
+ where s.name = 'Jacob' and subj.name = 'Math';
+
+ insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ select s.id, subj.id, 9
+ from student s, subject subj
+ where s.name = 'Logan' and subj.name = 'PE';

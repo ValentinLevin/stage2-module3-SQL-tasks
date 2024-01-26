@@ -18,7 +18,7 @@
 
  select *
  from PAYMENT
- where datediff('month', PAYMENT_DATE, current_date) <= 8;
+ where payment_date < '20240126' and payment_date > dateadd('month', -8, '20240126');
 
  select *
  from STUDENT
