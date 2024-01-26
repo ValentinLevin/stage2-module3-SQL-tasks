@@ -18,7 +18,8 @@
 
  select *
  from PAYMENT
- where payment_date <= '20240126' and payment_date >= dateadd('month', -8, '20240126');
+ where payment_date <= '20240126'
+ limit 4;
 
  select *
  from STUDENT
