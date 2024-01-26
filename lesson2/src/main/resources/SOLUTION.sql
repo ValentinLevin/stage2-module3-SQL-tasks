@@ -25,65 +25,44 @@
  insert into student(name, groupnumber, birthday)
  values('Logan', 3, '2010-01-01');
 
- insert into student(name, groupnumber, birthday)
- values('Toby Jones', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Art', 1);
 
- insert into student(name, groupnumber, birthday)
- values('Joseph Cooper', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Music', 1);
 
- insert into student(name, groupnumber, birthday)
- values('Joel Kaur', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Geography', 2);
 
- insert into student(name, groupnumber, birthday)
- values('Corey Reid', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('History', 2);
 
- insert into student(name, groupnumber, birthday)
- values('Rhys Barrett', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('PE', 3);
 
- insert into student(name, groupnumber, birthday)
- values('Jacoby Bryan', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Math', 3);
 
- insert into student(name, groupnumber, birthday)
- values('Gunner Fernandez', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Science', 4);
 
- insert into student(name, groupnumber, birthday)
- values('Hugh Pierce', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('IT', 4);
 
- insert into student(name, groupnumber, birthday)
- values('Samson Barker', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Chemistry', 5);
 
- insert into student(name, groupnumber, birthday)
- values('Melvin Mccoy', 4, '2010-01-01');
+ insert into subject(name, grade)
+ values('Biology', 5);
 
- insert into student(name, groupnumber, birthday)
- values('Blake Campbell', 5, '2010-01-01');
+ insert into paymenttype(id, name)
+     values(1, 'DAILY');
 
- insert into student(name, groupnumber, birthday)
- values('Patrick Andrews', 5, '2010-01-01');
+ insert into paymenttype(id, name)
+     values(2, 'WEEKLY');
 
- insert into student(name, groupnumber, birthday)
- values('Logan Richardson', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Taylor Allen', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Joe Parker', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Legend Cooke', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Braylon Buckley', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Jeffery Browning', 5, '2010-01-01');
-
- insert into student(name, groupnumber, birthday)
- values('Westin Brady', 5, '2010-01-01');
-
- insert into subject(name, grade) select 'Art', 1 union select 'Music', 1 union select 'Geography', 2 union select 'History', 2 union select 'PE', 3 union select 'Math', 3 union select 'Science', 4 union select 'IT', 4 union select 'Chemistry', 5 union select 'Biology', 5;
- insert into paymenttype(id, name) select 1, 'DAILY' union select 2, 'WEEKLY' union select 3, 'MONTHLY';
+ insert into paymenttype(id, name)
+     values(3, 'MONTHLY');
 
  insert into payment(type_id, amount, student_id, payment_date)
  select pt.id, cast(random() * 1000 as decimal), s.id, now()
