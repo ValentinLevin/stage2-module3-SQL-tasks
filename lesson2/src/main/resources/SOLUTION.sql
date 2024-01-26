@@ -84,27 +84,27 @@
  from student s, paymenttype pt
  where s.name = 'James' and pt.name = 'DAILY';
 
- insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ insert into mark(student_id, subject_id, mark)
  select s.id, subj.id, 8
  from student s, subject subj
  where s.name = 'Chris' and subj.name = 'Art';
 
- insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ insert into mark(student_id, subject_id, mark)
  select s.id, subj.id, 5
  from student s, subject subj
  where s.name = 'Oliver' and subj.name = 'History';
 
- insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ insert into mark(student_id, subject_id, mark)
  select s.id, subj.id, 9
  from student s, subject subj
  where s.name = 'James' and subj.name = 'Geography';
 
- insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ insert into mark(student_id, subject_id, mark)
  select s.id, subj.id, 4
  from student s, subject subj
  where s.name = 'Jacob' and subj.name = 'Math';
 
- insert into UNIVERSITY.MARK(student_id, subject_id, mark)
+ insert into mark(student_id, subject_id, mark)
  select s.id, subj.id, 9
  from student s, subject subj
  where s.name = 'Logan' and subj.name = 'PE';
